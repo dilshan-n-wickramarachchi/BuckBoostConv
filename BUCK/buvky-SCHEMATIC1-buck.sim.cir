@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-buck"  [ E:\1. ENGINEERING\2. BIO MEDICAL ENGINEERING\4. SEMESTER 4\2. MY NOTES\4. ELECTRONICS - III (4)\Assign\buvky-SCHEMATIC1-buck.sim ] 
+
+** Creating circuit file "buvky-SCHEMATIC1-buck.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1500us 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\buvky-SCHEMATIC1.net" 
+
+
+.END

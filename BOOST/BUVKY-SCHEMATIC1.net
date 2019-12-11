@@ -1,0 +1,9 @@
+* source BUVKY
+R_R1         0 N00744  6  
+L_L2         N00627 N00712  150uH  
+V_V2         N00627 0 6V
+M_M3         N00712 N04455 0 0 IRF044
+D_D3         N00712 N00744 D1N5820 
+V_V1         N04455 0  
++PULSE 0V 15V 1ns 1ns 1ns 10us 20us
+C_C3         0 N00744  33.3uF  

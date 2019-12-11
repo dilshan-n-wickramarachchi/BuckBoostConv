@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-boost"  [ e:\1. engineering\2. bio medical engineering\4. semester 4\2. my notes\4. electronics - iii (4)\boost\buvky-SCHEMATIC1-boost.sim ] 
+
+** Creating circuit file "buvky-SCHEMATIC1-boost.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2000ns 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\buvky-SCHEMATIC1.net" 
+
+
+.END

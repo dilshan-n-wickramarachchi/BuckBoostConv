@@ -1,0 +1,154 @@
+
+**** 11/17/17 09:05:11 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-boost"  [ e:\1. engineering\2. bio medical engineering\4. semester 4\2. my notes\4. electronics - iii (4)\bo
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "buvky-SCHEMATIC1-boost.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2000ns 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\buvky-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING buvky-SCHEMATIC1.net ****
+* source BUVKY
+R_R1         0 N00744  6  
+L_L1         N00627 N00712  150uH  
+V_V2         N00627 0 6V
+C_C1         0 N00744  33.3uF  
+D_D3         N00712 N00744 D1N5820 
+V_V1         N04455 0  
++PULSE 4V 15V 0 1ns 1ns 10us 20us
+M_M4         N00712 N04455 0 0 IRF044
+
+**** RESUMING buvky-SCHEMATIC1-boost.sim.cir ****
+.END
+
+**** 11/17/17 09:05:11 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-boost"  [ e:\1. engineering\2. bio medical engineering\4. semester 4\2. my notes\4. electronics - iii (4)\bo
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N5820         
+          IS    8.425000E-06 
+         ISR   58.320000E-06 
+         IKF    2.37         
+          RS     .03463      
+         CJO    1.288000E-09 
+          VJ     .75         
+           M     .5324       
+         XTI    0            
+
+
+**** 11/17/17 09:05:11 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-boost"  [ e:\1. engineering\2. bio medical engineering\4. semester 4\2. my notes\4. electronics - iii (4)\bo
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF044          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W    1.3          
+         VTO    3.441        
+          KP   21.210000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD  479.000000E-06 
+          RS     .01008      
+          RG    7.817        
+         RDS  266.700000E+03 
+          IS  228.700000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    5.111000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  103.000000E-09 
+        CGSO  830.700000E-12 
+        CGDO    1.012000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+**** 11/17/17 09:05:11 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-boost"  [ e:\1. engineering\2. bio medical engineering\4. semester 4\2. my notes\4. electronics - iii (4)\bo
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00627)    6.0000 (N00712)    6.0000 (N00744)    5.6620 (N04455)    4.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -2.945E+00
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.77E+01  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+
